@@ -3,54 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | ejae | Home page project" />
-  <meta name="author" content="ejae" />
-  <title>WDD 131 – Dynamic Web Fundamentals – ejae</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/base.css">
-
-  <!-- JavaScript -->
-  <script src="scripts/getdates.js" defer></script>
+  <title>Home | Temple Album</title>
+  <meta name="description" content="Welcome to the Temple Album homepage, featuring photos of temples worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
 </head>
 <body>
   <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Menu">☰</button>
     <nav>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a>
-      <a href="#">Final Project</a>
+      <a href="index.html">Home</a>
+      <a href="temples.html">Temple Album</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
     </nav>
   </header>
 
   <main>
-    <h1>ejae</h1>
-
-    <section class="card">
-      <h2>About Me</h2>
-      <img src="images/1.webp" alt="A picture of ejae">
-      <p>
-        Hello! My name is ejae. I am currently studying web development and love learning new technologies.
-        I enjoy building websites, exploring nature, and spending time with family and friends.
-      </p>
+    <section class="hero">
+      <h2>Welcome to the Temple Album</h2>
+      <p>Explore beautiful temples from around the world through our curated photo collection.</p>
+      <a class="button" href="temples.html">View Temple Album</a>
     </section>
 
-    <section class="card">
-      <h2>My Favorite Place</h2>
-      <img src="images/2.webp" alt="My favorite place">
-      <p>
-        One of my favorite places is Korea. It’s peaceful, inspiring, and reminds me to enjoy the beauty of the world.
-      </p>
+    <section class="intro">
+      <h3>About This Project</h3>
+      <p>This website showcases temples using responsive design principles, CSS Grid, Flexbox, and a mobile-first approach. Enjoy browsing and learning about these stunning structures.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> | ejae | Korea</p>
-    <p id="lastModified"></p>
+    <p>&copy; <span id="year"></span> Temple Album | Built by [Your Name]</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
