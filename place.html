@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Japan</title>
+  <meta name="description" content="Discover Japan - Land of the Rising Sun. Learn about its culture, nature, and weather.">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Japan</h1>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <picture>
+        <!-- WebP for modern browsers -->
+        <source srcset="images/1.webp" type="image/webp" media="(min-width: 600px)">
+        <!-- Fallback JPG for older browsers -->
+        <img src="images/1.jpg" alt="Beautiful view of Mount Fuji in Japan">
+      </picture>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Weather<span class="emoji"></span></h2>
+      <p>Temperature: <span id="temp">48</span> °F</p>
+      <p>Wind Speed: <span id="wind">6</span> mph</p>
+      <p>Wind Chill: <span id="windchill"></span></p>
+      <img src="images/weather.svg" alt="Weather icon showing sun and clouds" class="mobile-only">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Discover Japan | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

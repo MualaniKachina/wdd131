@@ -1,0 +1,21 @@
+@media (min-width: 32rem) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .weather {
+    max-width: 300px;
+  }
+
+  .emoji::after {
+    content: " ⛅"; /* pseudo-element emoticon for larger view */
+  }
+
+  .mobile-only {
+    display: none; /* hide SVG icon in larger view */
+  }
+}
