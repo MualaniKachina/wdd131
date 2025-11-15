@@ -9,30 +9,42 @@
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
   <header>
     <h1>Discover Japan</h1>
   </header>
 
   <main>
-    <!-- Hero Section -->
+
+    <!-- HERO SECTION -->
     <section class="hero">
       <picture>
-        <!-- WebP for modern browsers -->
+        <!-- Large WebP -->
         <source srcset="images/1.webp" type="image/webp" media="(min-width: 600px)">
-        <!-- Fallback JPG for older browsers -->
-        <img src="images/1.jpg" alt="Beautiful view of Mount Fuji in Japan">
+        <!-- Small WebP -->
+        <source srcset="images/1.webp" type="image/webp">
+        <!-- Large JPG fallback -->
+        <source srcset="images/1.webp" media="(min-width: 600px)">
+        <!-- Small JPG fallback -->
+        <img src="images/1.webp" alt="Beautiful view of Mount Fuji in Japan">
       </picture>
+      <div class="hero-text">Beautiful view of Mount Fuji</div>
     </section>
 
-    <!-- Weather Section -->
+    <!-- WEATHER SECTION -->
     <section class="weather">
-      <h2>Weather<span class="emoji"></span></h2>
+      <h2>Weather <span class="emoji"></span></h2>
       <p>Temperature: <span id="temp">48</span> °F</p>
       <p>Wind Speed: <span id="wind">6</span> mph</p>
       <p>Wind Chill: <span id="windchill"></span></p>
-      <img src="images/weather.svg" alt="Weather icon showing sun and clouds" class="mobile-only">
+      <!-- Mobile-only SVG -->
+      <img src="images/weather.svg"
+           alt="Weather icon showing sun and clouds"
+           class="mobile-only"
+           role="img">
     </section>
+
   </main>
 
   <footer>

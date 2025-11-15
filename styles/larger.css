@@ -18,4 +18,8 @@
   .mobile-only {
     display: none; /* hide SVG icon in larger view */
   }
+
+  .hero-text {
+    font-size: 2rem; /* slightly larger overlay text */
+  }
 }
